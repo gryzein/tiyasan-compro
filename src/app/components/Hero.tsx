@@ -34,7 +34,7 @@ export function Hero() {
               </span>
             </div>
 
-            <h1 className="text-black tracking-tight leading-[1.05]" style={{ fontWeight: 800, fontSize: "clamp(2.5rem, 5.5vw, 4.5rem)" }}>
+            <h1 className="text-black tracking-tight leading-[1.05]" style={{ fontWeight: 800, fontSize: "52px" }}>
               Agentic ERP &{" "}
               <span className="relative inline-block">
                 <span className="text-[#FE4411]">IT Services</span>
