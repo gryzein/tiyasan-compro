@@ -43,7 +43,7 @@ export function Hero() {
                 Explore Our Services
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
-              <button className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border-2 border-slate-200 text-black hover:border-[#FE4411] hover:text-[#FE4411] transition-all" style={{ fontWeight: 600 }}>
+              <button className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full border-2 border-[#585858] text-black hover:border-[#FE4411] hover:text-[#FE4411] transition-all" style={{ fontWeight: 600 }}>
                 Contact Us
               </button>
             </div>
