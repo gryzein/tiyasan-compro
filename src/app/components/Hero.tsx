@@ -8,15 +8,25 @@ const categories = [
   { icon: Headphones, title: "Support", desc: "Managed services with SLA guarantees." },
 ];
 
+// ... (import tetap sama)
+
 export function Hero() {
   return (
     <section className="relative overflow-hidden">
       <div className="absolute top-20 -right-40 w-[500px] h-[500px] rounded-full bg-orange-50 blur-3xl opacity-60" />
       <div className="absolute -bottom-20 -left-40 w-[400px] h-[400px] rounded-full bg-orange-100 blur-3xl opacity-40" />
 
-      <div className="relative max-w-7xl mx-auto px-6 lg:px-12 pt-16 pb-16 lg:pt-24 lg:pb-20">
-        <div className="grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
-          <div className="lg:col-span-7">
+      <div className="relative max-w-7xl mx-auto p-[24px]">
+        {/* MODIFIKASI DI SINI: Menambahkan 'flex flex-col' untuk mobile dan 'lg:grid' untuk desktop */}
+        <div className="flex flex-col lg:grid lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          {/* Ilustrasi: Muncul pertama di mobile (order-1), tapi pindah ke kanan di desktop (lg:order-2 / col-span-5) */}
+          <div className="order-1 lg:order-2 lg:col-span-5 w-full">
+            <HeroIllustration />
+          </div>
+
+          {/* Teks: Muncul kedua di mobile (order-2), tapi pindah ke kiri di desktop (lg:order-1 / col-span-7) */}
+          <div className="order-2 lg:order-1 lg:col-span-7">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-50 border border-orange-100 mb-8">
               <Sparkles className="w-4 h-4 text-[#FE4411]" />
               <span className="text-[#FE4411] tracking-wide" style={{ fontWeight: 500, fontSize: "0.875rem" }}>
@@ -48,13 +58,9 @@ export function Hero() {
               </button>
             </div>
           </div>
-
-          <div className="lg:col-span-5">
-            <HeroIllustration />
-          </div>
         </div>
 
-        {/* Category grid */}
+        {/* Category grid tetap seperti semula */}
         <div className="mt-16 lg:mt-20 grid grid-cols-2 lg:grid-cols-4 gap-4">
           {categories.map((c) => (
             <div key={c.title} className="group bg-white p-6 rounded-2xl border border-slate-100 hover:border-[#FE4411] hover:shadow-xl hover:shadow-orange-100/40 transition-all cursor-pointer">
