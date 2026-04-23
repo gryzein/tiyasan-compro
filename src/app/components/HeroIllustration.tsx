@@ -7,7 +7,7 @@ export function HeroIllustration() {
 
       <div className="relative w-full h-full rounded-[2.5rem] overflow-hidden shadow-2xl shadow-orange-200/50">
         <ImageWithFallback
-          src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=80"
+          src="https://images.unsplash.com/photo-1549692520-acc6669e2f0c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="Modern AI enterprise technology"
           className="w-full h-full object-cover"
         />
